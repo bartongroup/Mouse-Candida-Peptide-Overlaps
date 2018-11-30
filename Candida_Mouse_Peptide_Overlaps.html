@@ -13166,7 +13166,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Pepdigest reports the digest products for each protein, along with some basic statistics for the peptide. The peptides have been parsed from these outputs using a python script, and stored in data structures allowing them to be interrogated.</p>
-<h2 id="Results">Results<a class="anchor-link" href="#Results">&#182;</a></h2><p>The total number of proteins and peptides represented, and also the proportion of proteins and peptides which are unique <em>within</em> that organism are indicated in table 1. The unique proteins and peptides from each organism were then combined, and the unique numbers within this set also identified (labeled 'Combined unique peptides' in the table). The 'Unique proteins' and 'Unique peptides' values in this row indicate the proteins and peptides which are unique in the context of both organisms. The bottom row of the table indicates the number of proteins and peptides which are common in the 'combined unique peptides' set.</p>
+<h2 id="Results">Results<a class="anchor-link" href="#Results">&#182;</a></h2><p>The total number of proteins and peptides represented, and also the proportion of proteins and peptides which are unique <em>within</em> that organism are indicated in table 1. The unique proteins and peptides from each organism were then combined, and the unique numbers within this set also identified (labeled 'Combined unique peptides' in the table). The 'Unique proteins' and 'Unique peptides' values in this row indicate the proteins and peptides which are unique in the context of both organisms.</p>
 
 </div>
 </div>
@@ -13237,14 +13237,6 @@ div#notebook {
       <td>46800</td>
       <td>425840</td>
     </tr>
-    <tr>
-      <th>3</th>
-      <td>Common to both</td>
-      <td></td>
-      <td></td>
-      <td>21</td>
-      <td>1413</td>
-    </tr>
   </tbody>
 </table>
 </div>
@@ -13297,7 +13289,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><em>Figure 1 - Intersections of various peptide sets. (a) Unique peptides within total set of Candida albicans peptides (b) Unique peptides within the total set of Mus musculus peptides (c) Total peptides of Candida albicans and Mus musculus (d) Unique peptides from Candida albicans and Mus musculus.</em></p>
-<p>Note there is a discrepancy between the total number of peptides and the sum of the unique and non-unique peptides sets in each organism. This is a result of non-unique peptides which are represented more than twice, particularly common in very short peptides. Density plots showing the frequency distribution of peptides in both organisms are shown in figure 2.</p>
+<p>Note there is a discrepancy between the total number of peptides and the sum of the unique and non-unique peptides sets in each organism. This is a result of non-unique peptides which are represented more than twice, which is particularly common for very short peptides. Density plots showing the frequency distribution of peptides in both organisms are shown in figure 2.</p>
 
 </div>
 </div>
@@ -13334,17 +13326,52 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><em>Figure 2 - Peptide frequency distribution of all peptides</em></p>
+<p>The 1413 peptides which are common between Candida and Mouse are found in 1243 Mouse proteins and 1168 Candida proteins. Summary tables of the proteins in the intersection are available in the tab-delimited <code>candida_intersection_proteins.txt</code> and <code>mouse_intersection_proteins.txt</code> files. To determine the likely impact on proteins which may be difficult to correctly identify due to a high proportion of shared peptides, the number of shared peptides and number of total peptides for each protein in this intersection was compared in proteins with more than one shared peptide. Proteins with &gt;50% shared peptides are indicated in table 2. Only 1 protein would appear to be affected in this way. This protein is annotated as Tex26 - testis expressed 26. 323 proteins have more than one shared peptide, which are summarised in the file <code>shared_peptide_proportions.txt</code></p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt"></div><div></div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+    <div class="output_area">
+    
+        <div class="prompt"></div>
+        
+    </div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">&#182;</a></h2><p>There is very little overlap between the peptides which are unique to Candida or Mouse. There are far more peptides which are non-unique within each organism, and consequently would not allow discrimination between multiple proteins, than there are in the intersection between the organisms. Mouse, in particular, is notable for the proportion of non-unique peptides represented in the proteome. The originating organism and protein for the vast majority of peptides identified through MS proteomics experiments would therefore be able to be unambiguously identified.</p>
+<p><em>Table 2 - Proteins with more than 50% of peptides found in both mouse and Candida</em></p>
+<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">&#182;</a></h2><p>The overlap in peptides between Candida and mouse would result in certain peptides from 1243 mouse proteins and 1168 Candida being unable to be assigned unambiguously to a specific protein in either organism. This does not, however, mean that these proteins would not be able to be discriminated between by other peptides they contain. Only one protein was found to have &gt;50% of it's peptides present in both organisms, so while individual peptides may be common between the organisms, this should not prevent the identification of most proteins.</p>
+<p>Considerably more peptides are non-unique within each organism, and consequently would not allow discrimination between multiple proteins, than there are in the intersection between the organisms. Mouse, in particular, is notable for the proportion of non-unique peptides represented in the proteome. The originating organism and protein for the vast majority of peptides identified through MS proteomics experiments would therefore be able to be unambiguously identified.</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
