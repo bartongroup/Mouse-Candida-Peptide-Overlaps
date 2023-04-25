@@ -1,4 +1,6 @@
 data
+Spectronaut_results
 .ipynb_checkpoints
 .DS_Store
-
+.vscode
+__pycache__
