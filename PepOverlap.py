@@ -24,6 +24,7 @@ class PepOverlap:
 			peptides_total(dict): Keyed on species name; stores lists of all peptides per species
 			peptides_unique(dict): Keyed on species name; stores lists of all unique peptides per species
 			peptides_high_freq(dict): Keyed on species name; stores lists of all peptides with >2 occurrences in each species
+			duplicate_df: Dataframe of multiply represented peptides
 		"""
 		self.total_dfs={}
 		self.high_freq_dfs={}
