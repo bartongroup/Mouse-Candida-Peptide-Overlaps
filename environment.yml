@@ -4,20 +4,20 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - biopython=1.81=py311he2be06e_0
-  - bokeh=2.4.3=pyhd8ed1ab_3
-  - dill=0.3.6=pyhd8ed1ab_1
+  - biopython=1.81
+  - bokeh=2.4.3
+  - dill=0.3.6
   - emboss=6.6.0
-  - holoviews=1.15.4=pyhd8ed1ab_0
-  - matplotlib=3.7.0=py311ha1ab1f8_0
-  - matplotlib-base=3.7.0=py311h99a5f44_0
-  - matplotlib-inline=0.1.6=pyhd8ed1ab_0
-  - matplotlib-venn=0.11.7=pyhd8ed1ab_0
-  - numpy=1.24.2=py311h60f8152_0
-  - pandas=1.5.3=py311h4eec4a9_0
-  - python=3.11.0=h3ba56d0_1_cpython
-  - pyyaml=6.0=py311he2be06e_5
-  - scipy=1.10.0=py311h0bcca16_2
-  - seaborn=0.12.2=hd8ed1ab_0
-  - seaborn-base=0.12.2=pyhd8ed1ab_0
-  - yaspin=2.2.0=pyhd8ed1ab_0
+  - holoviews=1.15.4
+  - matplotlib=3.7.0
+  - matplotlib-base=3.7.0
+  - matplotlib-inline=0.1.6
+  - matplotlib-venn=0.11.7
+  - numpy=1.24.2
+  - pandas=1.5.3
+  - python=3.11.0
+  - pyyaml=6.0
+  - scipy=1.10.0
+  - seaborn=0.12.2
+  - seaborn-base=0.12.2
+  - yaspin=2.2.0
