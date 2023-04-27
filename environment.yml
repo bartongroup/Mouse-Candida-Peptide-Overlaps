@@ -9,6 +9,7 @@ dependencies:
   - dill=0.3.6
   - emboss=6.6.0
   - holoviews=1.15.4
+  - jupyterlab=3.6.2
   - matplotlib=3.7.0
   - matplotlib-base=3.7.0
   - matplotlib-inline=0.1.6
